@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsDashSquare, BsPlusSquare } from "react-icons/bs";
 
 function ProductCardShoppingCart() {
   return (
@@ -46,12 +47,21 @@ function ProductCardShoppingCart() {
           $36.00{" "}
           <span class="text-red-300 line-through"> $45.00</span>
         </p>
+        <button>
+              <BsDashSquare/>
+          </button>
         <p class="text-base dark:text-white xl:text-lg leading-6 text-gray-800">
           0
         </p>
+        <button>
+              <BsPlusSquare/>
+          </button>
         <p class="text-base dark:text-white xl:text-lg font-semibold leading-6 text-gray-800">
           $72.00
         </p>
+      </div>
+      <div>
+
       </div>
     </div>
   </div>
