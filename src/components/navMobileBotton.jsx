@@ -3,7 +3,7 @@ import { BsHeart, BsCart, BsPerson, BsPower } from "react-icons/bs";
 
 function NavMobileBotton() {
   return (
-    <div className="py-4 px-6 w-full flex xl:hidden justify-between items-center fixed bottom-0 bg-white z-40">
+    <div className="py-4 px-6 w-full shadow flex xl:hidden justify-between items-center fixed bottom-0 bg-white z-40">
       <button
         aria-label="open menu"
         className=" border-b-2 border-transparent  flex px-1 items-center py-3 text-sm leading-5 text-gray-700 focus:outline-none transition duration-150 ease-in-out hover:text-red-500"

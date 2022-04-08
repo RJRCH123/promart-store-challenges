@@ -7,8 +7,7 @@ import {
 
 function NavMobileTop() {
   return (
-    <nav>
-      <div className="py-3 px-6 w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
+      <nav className="py-3 px-6 shadow w-full flex xl:hidden justify-between items-center bg-white fixed top-0 z-40">
         <div
           aria-label="logo"
           role="img"
@@ -32,8 +31,7 @@ function NavMobileTop() {
             <BsCommand className="w-6 h-6"/>
           </button>
         </div>
-      </div>
-    </nav>
+      </nav>
   );
 }
 
