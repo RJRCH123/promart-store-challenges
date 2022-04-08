@@ -2,8 +2,8 @@ import React from "react";
 import ProductCard from "./productCard";
 function Products() {
   return (
-    <div class="mx-auto container">
-      <div class=" bg-white rounded flex items-center w-full p-3 shadow-sm border border-gray-200">
+    <div class="mx-auto p-10 container">
+      <div class=" bg-white rounded flex items-center w-full p-3 mt-4 shadow-sm border border-gray-200">
         <button class="outline-none focus:outline-none">
           <svg
             class=" w-5 text-gray-600 h-5 cursor-pointer"
@@ -42,10 +42,10 @@ function Products() {
           </select>
         </div>
       </div>
-      <div class="flex flex-wrap items-center lg:justify-between justify-center">
-        <ProductCard /> <ProductCard /> <ProductCard /> <ProductCard />{" "}
+      <div class="flex flex-wrap items-center p-10 lg:justify-between justify-center">
+        <ProductCard /> <ProductCard /> <ProductCard /> <ProductCard />
         <ProductCard /> <ProductCard /> <ProductCard />
-        <ProductCard /> <ProductCard /> <ProductCard /> <ProductCard />{" "}
+        <ProductCard /> <ProductCard /> <ProductCard /> <ProductCard />
         <ProductCard />
       </div>
     </div>
