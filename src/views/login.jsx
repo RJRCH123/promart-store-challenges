@@ -1,17 +1,18 @@
 import React from "react";
+import Logo from "../imgs/Logos/Logo-Ext2.png";
 
 function Login() {
   return (
     <div class="h-screen md:flex">
-      <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
-        <div>
-          <h1 class="text-white font-bold text-4xl font-sans">GoFinance</h1>
+      <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-red-500 to-red-600 i justify-around items-center hidden">
+        <div className="mx-10">
+          <h1 class="text-white font-bold text-4xl font-sans">Conoce sobre Nosotros</h1>
           <p class="text-white mt-1">
-            The most popular peer to peer lending at SEA
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda fuga laboriosam qui amet hic repellat, esse obcaecati animi ratione quae saepe minus quo voluptatum voluptates tempore voluptatem, consectetur a quam!
           </p>
           <button
             type="submit"
-            class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2"
+            class="block w-28 border-2 text-white hover:text-red-500 hover:bg-white  mt-4 py-2 rounded-2xl font-bold mb-2"
           >
             Read More
           </button>
@@ -21,54 +22,26 @@ function Login() {
         <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
         <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
       </div>
-      <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
-        <form class="bg-white">
-          <h1 class="text-gray-800 font-bold text-2xl mb-1">Hello Again!</h1>
-          <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p>
-          <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-gray-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <input
-              class="pl-2 outline-none border-none"
-              type="text"
-              name=""
-              id=""
-              placeholder="Full name"
-            />
-          </div>
-          <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 text-gray-400"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
-              />
-            </svg>
-            <input
-              class="pl-2 outline-none border-none"
-              type="text"
-              name=""
-              id=""
-              placeholder="Username"
-            />
-          </div>
+      <div class="flex md:w-1/2 h-screen justify-center py-10 items-center bg-white">
+        <form class="bg-white align-center">
+          <div className="flex mb-14 justify-center">
+            <img className="h-8" src={Logo} alt="Promart" /></div>
+            <a href="W" class="flex items-center justify-center mt-4 mb-4 text-white rounded-lg shadow-md hover:bg-gray-100">
+                <div class="px-4 py-3">
+                    <svg class="h-6 w-6" viewBox="0 0 40 40">
+                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#FFC107"/>
+                        <path d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z" fill="#FF3D00"/>
+                        <path d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z" fill="#4CAF50"/>
+                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#1976D2"/>
+                    </svg>
+                </div>
+                <h1 class="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">Inicia con Google</h1>
+            </a>
+            <div class="mt-4 mb-4 flex items-center justify-between hover:text-red-500">
+                <span class="border-b w-1/5 lg:w-1/4"></span>
+                <a href="W" class="text-xs text-center text-gray-500">O ingresa tu correo</a>
+                <span class="border-b w-1/5 lg:w-1/4"></span>
+            </div>
           <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -86,10 +59,10 @@ function Login() {
             </svg>
             <input
               class="pl-2 outline-none border-none"
-              type="text"
+              type="email"
               name=""
               id=""
-              placeholder="Email Address"
+              placeholder="Correo Electrónico"
             />
           </div>
           <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
@@ -110,7 +83,7 @@ function Login() {
               type="text"
               name=""
               id=""
-              placeholder="Password"
+              placeholder="Contraseña"
             />
           </div>
           <button
@@ -120,8 +93,13 @@ function Login() {
             Login
           </button>
           <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">
-            Forgot Password ?
+            ¿Olvidasto contraseña?
           </span>
+          <div class="mt-4 flex items-center justify-between hover:text-red-500">
+                <span class="border-b w-1/5 md:w-1/4"></span>
+                <a href="WW" class="text-xs text-gray-500">O Registrate</a>
+                <span class="border-b w-1/5 md:w-1/4"></span>
+            </div>
         </form>
       </div>
     </div>

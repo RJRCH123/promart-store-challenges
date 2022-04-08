@@ -1,9 +1,7 @@
 import React from 'react'
-import Footer from '../components/footer'
 import NavDesktop from '../components/navDesktop'
 import NavMobileBotton from '../components/navMobileBotton'
 import NavMobileTop from '../components/navMobileTop'
-import ProductCard from '../components/productCard'
 
 function Home() {
   return (
@@ -11,8 +9,6 @@ function Home() {
       <NavDesktop/>
       <NavMobileTop/>
       
-      <ProductCard/>      
-      <Footer/>
       <NavMobileBotton/>
     </div>
   )
