@@ -24,6 +24,7 @@ function ProductCardDetail() {
             </div>
           </div>
         </div>
+        
         <div class="flex flex-col justify-center px-4 py-6 md:p-6 xl:p-8 w-full bg-gray-50 dark:bg-gray-800 space-y-6">
           <h3 class="text-xl dark:text-white font-semibold leading-5 text-gray-800">
             Producto Name

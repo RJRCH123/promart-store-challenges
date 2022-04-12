@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "./productCard";
 function Products() {
   return (
-    <div class="mx-auto p-10 container">
+    <div class="mx-auto container">
       <div class=" bg-white rounded flex items-center w-full p-3 mt-4 shadow-sm border border-gray-200">
         <button class="outline-none focus:outline-none">
           <svg
