@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useContext } from "react";
 import Logo from "../imgs/Logos/Logo-Ext2.png";
 /* import AuthContext from "../context/AuthProvider"; */
 import useAuth from '../hooks/useAuth';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation, Navigate } from 'react-router-dom';
 
 import axios from "../api/axios";
 import Users from "../components/Users";
@@ -13,8 +13,10 @@ const LOGIN_URL = "/auth";
 
 
 function Login() {
+
+  const navigate = useNavigate();
   /* const { setAuth } = useContext(AuthContext); */
-  const { setAuth } = useAuth();
+  /* const { setAuth } = useAuth();
   const [success, setSuccess] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -67,12 +69,12 @@ function Login() {
           }
           errRef.current.focus();
       }
-  }
+  } */
 
 
   return (
     <>
-      {success ? (
+     {/* {success ? (
         <section>
           <h1>You are logged in!</h1>
           <br />
@@ -80,9 +82,9 @@ function Login() {
           <p>
             <a href="w">Go to Home</a>
           </p>
-          {/* <button onClick={()=>refresh()}>Refresh</button> */}
+          <button onClick={()=>refresh()}>Refresh</button> 
         </section>
-      ) : (
+      ) : (  */}
         <section class="h-screen md:flex">
           <div class="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-red-500 to-red-600 i justify-around items-center hidden">
             <div className="mx-10">
@@ -108,12 +110,12 @@ function Login() {
             <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
           </div>
           <div class="flex md:w-1/2 h-screen justify-center py-10 items-center bg-white">
-            <form class="bg-white align-center" onSubmit={handleSubmit}>
+            <form class="bg-white align-center">
               <div className="flex mb-14 justify-center">
                 <img className="h-8" src={Logo} alt="Promart" />
               </div>
               <a
-                href="W"
+                href="/productos"
                 class="flex items-center justify-center mt-4 mb-4 text-white rounded-lg shadow-md hover:bg-gray-100"
               >
                 <div class="px-4 py-3">
@@ -142,7 +144,7 @@ function Login() {
               </a>
               <div class="mt-4 mb-4 flex items-center justify-between hover:text-red-500">
                 <span class="border-b w-1/5 lg:w-1/4"></span>
-                <a href="W" class="text-xs text-center text-gray-500">
+                <a href="" class="text-xs text-center text-gray-500">
                   O ingresa tu correo
                 </a>
                 <span class="border-b w-1/5 lg:w-1/4"></span>
@@ -168,11 +170,11 @@ function Login() {
                   name=""
                   placeholder="Correo Electrónico"
                   id="email"
-                  ref={userRef}
-                  autoComplete="off"
-                  onChange={(e) => setUser(e.target.value)}
-                  value={user}
-                  required
+                  // ref={userRef}
+                  // autoComplete="off"
+                  // onChange={(e) => setUser(e.target.value)}
+                  // value={user}
+                  // required
                 />
               </div>
               <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
@@ -194,30 +196,31 @@ function Login() {
                   name=""
                   placeholder="Contraseña"
                   id="password"
-                  onChange={(e) => setPwd(e.target.value)}
-                  value={pwd}
-                  required
+                  // onChange={(e) => setPwd(e.target.value)}
+                  // value={pwd}
+                  // required
                 />
               </div>
-              <p
+              {/* <p
                 ref={errRef}
                 className={errMsg ? "errmsg" : "offscreen"}
                 aria-live="assertive"
               >
                 {errMsg}
-              </p>
+              </p> */}
               <button
                 type="submit"
                 class="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                onClick={() => navigate(`/productos`)}
               >
-                Login
+                Inicia Sesión
               </button>
               <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">
-                ¿Olvidasto contraseña?
+                ¿Olvidaste tu contraseña?
               </span>
               <div class="mt-4 flex items-center justify-between hover:text-red-500">
                 <span class="border-b w-1/5 md:w-1/4"></span>
-                <a href="WW" class="text-xs text-gray-500">
+                <a href="/registro" class="text-xs text-gray-500">
                   O Registrate
                 </a>
                 <span class="border-b w-1/5 md:w-1/4"></span>
@@ -225,7 +228,7 @@ function Login() {
             </form>
           </div>
         </section>
-      )}
+      {/* )} */}
     </>
   );
 }

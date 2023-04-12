@@ -98,7 +98,7 @@ function ProductCardDetail() {
           <p class="text-md text-gray-800 mt-0">Disponible</p>
           <div class="flex flex-col-reverse group cursor-pointer">
             <a
-              href="w"
+               href="/carro-de-compras"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg mx-1 text-xs px-2 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               {" "}

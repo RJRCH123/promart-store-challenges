@@ -1,8 +1,11 @@
 import React from "react";
 import Logo from "../imgs/Logos/Logo-Ext2.png";
 import { BsHeart, BsCart, BsPerson, BsCaretRightFill, BsHouseDoor, BsQuestionCircle, BsGeoAlt, BsInfoCircle } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 function NavDesktop() {
+  const navigate = useNavigate();
+
   return (
     <nav role="navigation" className="bg-white shadow xl:block hidden">
       <div className="mx-auto container px-6 py-2 xl:py-0">
@@ -54,7 +57,7 @@ function NavDesktop() {
                         <path stroke="none" d="M0 0h24v24H0z"></path>
                         <path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"></path>
                       </svg>
-                      <span className="ml-2 font-bold">Products</span>
+                      <span className="ml-2 font-bold">Productos</span>
                     </div>
                   </li>
                   <li className=" xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
@@ -204,17 +207,17 @@ function NavDesktop() {
           <div className="flex">
             <div className="hidden xl:flex md:mr-6 xl:mr-16">
               <a
-                href="ww"
+                href="/productos"
                 className="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
               >
                 <span className="mr-2">
                 <BsHouseDoor className="h-6 w-6"/>
                 </span>
                 
-                Home
+                Productos
               </a>
               <a
-                href="ww"
+                href="/productos"
                 className="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
               >
                 <span className="mr-2">
@@ -223,7 +226,7 @@ function NavDesktop() {
                 Sucursales
               </a>
               <a
-                href="ww"
+                href="/productos"
                 className="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
               >
                 <span className="mr-2">
@@ -232,7 +235,7 @@ function NavDesktop() {
                 Sobre Nosotros
               </a>
               <a
-                href="ww"
+                href="/productos"
                 className="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
               >
                 <span className="mr-2">
@@ -242,14 +245,14 @@ function NavDesktop() {
               </a>
 
               <a
-                href="ww"
+                href="/productos"
                 className="focus:text-indigo-700 border-b-2 border-transparent focus:border-indigo-700 flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out hover:text-red-500"
               >
                 <span className="mr-2 grid grid-cols-2 items-center">
                   <BsCaretRightFill />
                   <BsPerson className="h-6 w-6" />
                 </span>
-                Ingresar
+                Nombre de Usuario
               </a>
               <div className="px-5 items-center grid gap-4 grid-cols-2">
                 <div class="flex rounded-full right-0 top-0 h-8 w-8 justify-center items-center p-2 cursor-pointer group">
@@ -262,7 +265,7 @@ function NavDesktop() {
                 </div>
 
                 <div class="flex rounded-full right-0 top-0 h-8 w-8 justify-center items-center p-2 cursor-pointer group">
-                  <button className=" rounded-full right-0 top-0 h-8 w-8 bg-gray-200 flex justify-center items-center p-2 cursor-pointer group hover:text-red-500 hover:bg-gray-100">
+                  <button onClick={() => navigate(`/carro-de-compras`)} className=" rounded-full right-0 top-0 h-8 w-8 bg-gray-200 flex justify-center items-center p-2 cursor-pointer group hover:text-red-500 hover:bg-gray-100">
                   <BsCart />
                   </button>
                   <div>

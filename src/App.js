@@ -10,12 +10,13 @@ import PaymentMethod from "./views/paymentMethod";
 function App() {
   return (
     <Routes>
-      <Route path="/Método-de-Pago" element={<PaymentMethod />} />
-      <Route path="/Carro-de-Compras" element={<ShoppingCart />} />
-      <Route path="/Detalle-Producto" element={<ProductDetail />} />
-      <Route path="/Registro" element={<SignUp />} />
-      <Route path="/Inicio-Sesion" element={<Login />} />
-      <Route path="/" element={<Home />} />
+      <Route path="/metodo-de-pago" element={<PaymentMethod />} />
+      <Route path="/carro-de-compras" element={<ShoppingCart />} />
+      <Route path="/detalle-producto" element={<ProductDetail />} />
+      <Route path="/registro" element={<SignUp />} />
+      <Route path="/inicio-sesion" element={<Login />} />
+      <Route path="/productos" element={<Home />} />
+      <Route path="/" element={<Login />} />
     </Routes>
   );
 }
