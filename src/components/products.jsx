@@ -30,31 +30,31 @@ function Products() {
       img:"https://rosenpe.vteximg.com.br/arquivos/ids/187312/Juego-Seccional-Guadalmina-4-piezas-31-3961.jpg?v=637807161636970000",
       dscto:20,
       price:"1099.50",
-      name:"Procuto 3"
+      name:"Juego de Mueble Queen"
     },
     {
       img:"https://rosenpe.vteximg.com.br/arquivos/livingestar_sofas.jpg?v=636343519445500000",
       dscto:20,
       price:"2500.00",
-      name:"Procuto 1"
+      name:"Mueble marrón King"
     },
     {
       img:"https://rosenpe.vteximg.com.br/arquivos/ids/178650-450-450/Reposera-Kotor-Negra-2-2658.jpg?v=637400196103830000",
       dscto:5,
       price:"1860.98",
-      name:"Procuto 2"
+      name:"Camilla para terraza"
     },
     {
       img:"https://rosenpe.vteximg.com.br/arquivos/livingestar_poltronas.jpg?v=636343519524400000",
       dscto:20,
       price:"5920.50",
-      name:"Procuto 3"
+      name:"Mueble para estar"
     },
     {
       img:"https://rosenpe.vteximg.com.br/arquivos/livingestar_mesasliving.jpg?v=636343519557370000",
       dscto:5,
       price:"3200.98",
-      name:"Procuto 2"
+      name:"Juego de mesa start"
     },
   ];
   return (
